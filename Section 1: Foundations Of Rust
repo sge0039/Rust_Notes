@@ -1,0 +1,19 @@
+INSTALLING RUST
+Install Rust: https://www.rust-lang.org/tools/install
+Checking the version of rust: rustc --version
+Updating the version of rust: rustup update
+
+CREATING NEW RUST PROJECTS
+To created new rust project: cargo new <Project Name>
+
+RUNNING RUST PROJECTS
+Within the Rust Project run: cargo run
+To run without the debug information: cargo run -q
+
+DISABLING INLAY TYPE HINTS
+"If you want to disable the inlay type hints (those little grey type annotations) that are added by the rust-analyzer extension, do the following:
+1. Open the VSCode command prompt by pressing Command-Shift-P (Windows: Control-Shift-P) and search for 'settings json'
+2. Find the option called 'Preferences: Open User Settings (JSON)'. You want the one that says 'JSON', not 'UI'.
+3. In the curly braces, add the following two lines and save the file:
+  ""rust-analyzer.inlayHints.parameterHints.enable"": false,
+  ""rust-analyzer.inlayHints.typeHints.enable"": false,"
