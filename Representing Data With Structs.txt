@@ -1,0 +1,16 @@
+A good tool in rust to store some data and attach some functionality to is a Struct.
+Structs are kind of like classes from other languages
+
+Creating a struct:
+struct Deck {
+    cards: Vec<String>,
+}
+
+This can be broken down into different fields the struct can contain.
+
+Deck: Name of the struct, always capitalised.
+Cards: List of Fields (data) that this struct will wrap up.
+Vec: Vector that will contain strings.
+Vectors are like arrays that can grow/shrink in size. Rust also has 'arrays'. They are fixed lengths.
+
+The struck is like a blueprint. The blueprint allows you to create many instances of the Deck struct. Each of these will have their own vector (list) of playing cards.
